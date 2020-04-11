@@ -1,13 +1,12 @@
 "use strict";
-
+console.log("<-----task-06----->");
 let input;
 let total = 0;
 let message;
 
 do {
   input = prompt("Введите число");
-  console.log(input);
-  total = total + Number(input);
+  total += Number(input);
 } while (input !== null);
 
 console.log(`Общая сумма чисел равна ${total}`);

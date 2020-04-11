@@ -1,12 +1,14 @@
 "use strict";
-
+console.log("<-----task-05----->");
 let country = prompt("Выберите страну доставки.");
 let message;
 
 if (country === null) {
-  alert("Отменено пользователем");
+  console.log("Отменено пользователем");
 } else {
   country = country.toLowerCase();
+  const firstLetter = country[0].toUpperCase();
+  const wordChange = country.substring(1);
 
   switch (country) {
     case "китай":
@@ -32,9 +34,12 @@ if (country === null) {
     default:
       message = "В вашей стране доставка не доступна";
   }
+
   if (message !== "В вашей стране доставка не доступна") {
-    alert(`Доставка в ${country} будет стоить ${message} кредитов.`);
+    console.log(
+      `Доставка в ${firstLetter}${wordChange} будет стоить ${message} кредитов.`
+    );
   } else {
-    alert(message);
+    console.log(message);
   }
 }

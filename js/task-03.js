@@ -1,12 +1,17 @@
+"use strict";
+
+console.log("<-----task-03----->");
+
 const ADMIN_PASSWORD = "jqueryismyjam";
 let message;
 const num = prompt("ADMIN_PASSWORD");
 
 if (num === "jqueryismyjam") {
-    message = "Добро пожаловать!";
+  message = "Добро пожаловать!";
 } else if (num === null) {
-    message = "Отменено пользователем";
+  message = "Отменено пользователем";
 } else {
-    message = "Доступ запрещен, неверный пароль!";
+  message = "Доступ запрещен, неверный пароль!";
 }
 alert(message);
+console.log(message);
